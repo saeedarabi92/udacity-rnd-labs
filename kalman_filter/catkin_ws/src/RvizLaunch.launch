@@ -1,0 +1,6 @@
+<launch>
+  <node type="rviz" name="rviz" pkg="rviz" args="-d /home/workspace/udacity-rnd-labs/kalman_filter/catkin_ws/src/EKFLab.rviz" />
+</launch>
+
+
+
