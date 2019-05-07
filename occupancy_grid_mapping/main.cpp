@@ -86,13 +86,13 @@ void visualization()
         for (int y = 0; y < mapHeight / gridHeight; y++) {
         //Unkown state: green color, occupied state: black color, and free state: red color
         if (l[x][y] > 0.5 ){
-          plt::plot({l[x]}, {l[y]}, "k.");
+          plt::plot(l[x], l[y], "k.");
         }
         else if (l[x][y] < 0.5 && l[x][y] != 0){
-          plt::plot({l[x]}, {l[y]}, "r.");
+          plt::plot(l[x], l[y], "r.");
         }
         else if (l[x][y] == 0){
-          plt::plot({l[x]}, {l[y]}, "g.");
+          plt::plot(l[x], l[y], "g.");
         }
       }
     }
